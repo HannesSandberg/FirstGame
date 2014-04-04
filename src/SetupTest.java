@@ -1,3 +1,4 @@
+import org.newdawn.slick.AppGameContainer;
 import org.newdawn.slick.BasicGame;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
@@ -13,9 +14,14 @@ public class SetupTest extends BasicGame {
 
 	/**
 	 * @param args
+	 * @throws SlickException 
 	 */
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String[] args) throws SlickException {
+		AppGameContainer app = new AppGameContainer(new SetupTest("Setup Test"));
+		 
+	    app.setDisplayMode(400, 100, false);
+	 
+	    app.start();
 
 	}
 
